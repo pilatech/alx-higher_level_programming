@@ -3,4 +3,4 @@
 for code in range(97, 123):
     if (code == 101) or (code == 113):
         continue
-    print(chr(code), end="")
+    print("{}".format(chr(code)), end="")
