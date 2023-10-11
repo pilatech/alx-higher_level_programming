@@ -5,5 +5,5 @@ def uppercase(str):
             code = ord(str[i]) - 32
         else:
             code = ord(str[i])
-        print(chr(code), end="")
+        print("{}".format(chr(code)), end="")
     print("")
