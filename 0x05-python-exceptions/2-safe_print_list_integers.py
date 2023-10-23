@@ -3,7 +3,7 @@ def safe_print_list_integers(my_list=[], x=0):
     count = 0
     for i in range(x):
         try:
-             item = my_list[i]
+            item = my_list[i]
         except Exception as err:
             print(err)
         else:
