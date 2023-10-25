@@ -40,7 +40,6 @@ class Square:
         for posY in range(self.__position[1]):
             print("")
         if self.__size == 0:
-            print(" " * self.__position[0], end="")
             print("")
         else:
             for i in range(self.__size):
