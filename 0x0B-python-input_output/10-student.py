@@ -23,7 +23,7 @@ class Student:
         if attrs:
             dc = {}
             for item in attrs:
-                if item in vars(self):
+                if item in vars(self) and type(item) is str:
                     dc[item] = vars(self)[item]
             return dc
         return vars(self)
