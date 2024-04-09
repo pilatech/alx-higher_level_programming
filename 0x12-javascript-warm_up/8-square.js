@@ -4,9 +4,9 @@ if (isNaN(s)) {
   console.log('Missing size');
 } else {
   for (let i = 0; i < s; i++) {
-    let str = "";
+    let str = '';
     for (let j = 0; j < s; j++) {
-      str += "X";
+      str += 'X';
     }
     console.log(str);
   }
