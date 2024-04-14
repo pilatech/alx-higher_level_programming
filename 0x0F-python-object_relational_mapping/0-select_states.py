@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+"""Print list of states from the database"""
+
 if __name__ == '__main__':
     import MySQLdb
     import sys
