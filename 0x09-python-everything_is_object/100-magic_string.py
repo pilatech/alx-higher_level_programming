@@ -1,3 +1,4 @@
 #!/usr/bin/python
 def magic_string():
-    return "BestSchool"
+    global num = 0
+   return *["BestSchool" for i in range(global num)]
