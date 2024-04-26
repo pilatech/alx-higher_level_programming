@@ -1,3 +1,3 @@
 #!/bin/bash
 # display size of the fetched response
-curl -s -X DELETE $1;
+curl -H "X-School-User-Id: 98" $1;
