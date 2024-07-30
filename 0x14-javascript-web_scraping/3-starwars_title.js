@@ -2,7 +2,8 @@
 const request = require('request');
 
 if (process.argv.length >= 3) {
-  const url = process.argv[2];
+  const movieId = process.argv[2];
+  const url = `https://swapi-api.alx-tools.com/api/films/${movieId}`;
   const options = {
     url
   };
@@ -12,7 +13,10 @@ if (process.argv.length >= 3) {
     if (error) {
       console.log(error);
     } else {
-      console.log(`code: ${response.statusCode}`);
+      const movieTitle = JSON.parse(body).title;
+      if (movieTitle) {
+        console.log(movieTitle);
+      }
     }
   }
 }
