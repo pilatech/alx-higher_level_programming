@@ -1,7 +1,13 @@
 #!/usr/bin/node
-const { readFile } = require('fs/promises');
+const fs = require('fs');
 
-const filepath = process.argv[2];
-readFile(filepath, 'utf8')
-  .then(data => console.log(data))
-  .catch(err => console.log(err));
+if (process.argv.length >= 3) {
+  const filename = process.argv[2];
+  fs.readFile(filename, 'utf-8', (error, data) => {
+    if (error) {
+      console.log(error);
+    } else {
+      console.log(data);
+    }
+  });
+}
