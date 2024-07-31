@@ -14,15 +14,13 @@ if (process.argv.length >= 3) {
       console.log(error);
     } else {
       const movie = JSON.parse(body);
-      for (const character in movie.characters) {
-        request.get({ url: `https://swapi-api.alx-tools.com/api/people/${character}` }, (error, response, body) => {
+      for (const characterUrl of movie.characters) {
+        request.get({ url: characterUrl }, (error, response, body) => {
           if (error) {
             console.log(error);
           } else {
-            const user = JSON.parse(body);
-            if (user.name) {
-              console.log(user.name);
-            }
+            const character = JSON.parse(body);
+            console.log(character.name);
           }
         });
       }
