@@ -1,4 +1,4 @@
--- Scripts that creates a table the enforces `id` field
+-- Script that creates a table the enforces `id` field
 
 -- Create table `id_not_null`
 CREATE TABLE

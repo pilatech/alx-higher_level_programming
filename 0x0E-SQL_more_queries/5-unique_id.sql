@@ -1,4 +1,4 @@
--- Scripts that creates a table the enforces unique`id` field
+-- Script that creates a table the enforces unique`id` field
 
 -- Create table `unique_id`
 CREATE TABLE

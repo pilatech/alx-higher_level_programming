@@ -1,4 +1,4 @@
--- Scripts that creates a table the enforces `name` field
+-- Script that creates a table the enforces `name` field
 
 -- Create table `force_name`
 CREATE TABLE
