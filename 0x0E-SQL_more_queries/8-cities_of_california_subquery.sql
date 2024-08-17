@@ -7,5 +7,6 @@ SELECT *
 	SELECT id
 	  FROM states
 	 WHERE name = 'California'
+	 LIMIT 1
 	)
 ORDER BY cities.id;
