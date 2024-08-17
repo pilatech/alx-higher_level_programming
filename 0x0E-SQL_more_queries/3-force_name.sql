@@ -1,0 +1,8 @@
+-- Scripts that creates a table the enforces `name` field
+
+-- Create table `force_name`
+CREATE TABLE
+	IF NOT EXISTS force_name(
+		id INT,
+		name VARCHAR(256) NOT NULL
+		);
